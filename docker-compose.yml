@@ -1,0 +1,9 @@
+services:
+ spotify-downloader-ui:
+    image: spotdl-pwa
+    container_name: spotdl-pwa
+    restart: always
+    volumes:
+      - /path/to/music:/app/downloads
+    ports:
+      - "8880:8800"
